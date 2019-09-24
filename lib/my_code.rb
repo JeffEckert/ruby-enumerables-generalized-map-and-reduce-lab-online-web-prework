@@ -8,7 +8,7 @@ def map(array)
   new 
 end 
 
-def reduce(array, starting value=nil)
+def reduce(array, starting value=0)
   new = []
   i = 0 
   new.push(yeild(array[i]))
