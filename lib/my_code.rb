@@ -8,12 +8,19 @@ def map(array)
   new 
 end 
 
-def reduce(array, starting value=0)
-  new = []
-  i = 0 
-  new.push(yeild(array[i]))
+def reduce(array, sv=nil)
+ if sv
+  sum = sv
+   i = 0 
+ else
+   sum = array[0]
+   i = 1 
+ end
+ 
+ while i < array.length
+  sum = yield(sum, array[i])
   i += 1 
 end
-new
+sum
 end
   
