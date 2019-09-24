@@ -8,7 +8,10 @@ def map(array)
   new 
 end 
 
-def reduce
+def reduce(array, starting value=nil)
+  new = []
+  i = 0 
+  
   
   
 end
