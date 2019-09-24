@@ -18,5 +18,5 @@
 # end
 
 def map(array)
-  base = "final_counter.push(array[counter])"
+  new = "final_counter.push(array[counter])"
 end 
